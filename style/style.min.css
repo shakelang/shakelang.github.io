@@ -3,10 +3,10 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  --primary-background-color: #F4F4F4;
+  --primary-background-color: #222;
   --primary-font-color: #000;
   --secoundary-font-color: #666;
-  --primary-color: #ccc;
+  --primary-color: #555;
   background: var(--primary-background-color); }
 
 nav {
