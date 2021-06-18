@@ -3,17 +3,21 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  --primary-background-color: #222;
+  --primary-background-color: #F4F4F4;
   --primary-font-color: #000;
   --secoundary-font-color: #666;
-  --primary-color: #555;
+  --primary-color: #ccc;
   background: var(--primary-background-color); }
 
 nav {
-  width: calc(100% - 20px);
-  height: 40px;
-  padding: 10px;
+  width: calc(100% - 8px);
+  height: 50px;
+  padding: 4px;
   margin: 0;
   border-bottom: 1px solid var(--primary-color); }
-  nav img {
-    height: 100%; }
+  nav div.logo {
+    display: inline-block;
+    height: 50px;
+    width: 134.25px;
+    background: url("../assets/logo/logo-black.svg");
+    background-size: 100%; }
