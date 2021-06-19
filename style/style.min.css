@@ -4,10 +4,12 @@ html, body {
   width: 100%;
   height: 100%;
   --primary-background-color: #F4F4F4;
+  --code-block-background-color: #D4D4D4;
   --primary-font-color: #000;
   --secoundary-font-color: #666;
   --primary-color: #ccc;
-  background: var(--primary-background-color); }
+  background: var(--primary-background-color);
+  font-family: Arial, Helvetica, sans-serif; }
 
 nav {
   width: calc(100% - 8px);
@@ -21,3 +23,64 @@ nav {
     width: 134.25px;
     background: url("../assets/logo/logo-black.svg");
     background-size: 100%; }
+
+#site-contents {
+  padding: 12px 40px 40px 40px;
+  font-size: 16px; }
+  #site-contents h1, #site-contents h2 {
+    border-bottom: 1px solid #ddd; }
+  #site-contents h1, #site-contents h2, #site-contents h3, #site-contents h4, #site-contents h5, #site-contents h6 {
+    position: relative;
+    margin: 32px 0 6px 0; }
+    #site-contents h1 a, #site-contents h2 a, #site-contents h3 a, #site-contents h4 a, #site-contents h5 a, #site-contents h6 a {
+      right: calc(100% + 6px);
+      position: absolute;
+      color: var(--primary-font-color);
+      opacity: 0;
+      -webkit-transition: opacity ease 100ms;
+      transition: opacity ease 100ms; }
+      #site-contents h1 a i, #site-contents h2 a i, #site-contents h3 a i, #site-contents h4 a i, #site-contents h5 a i, #site-contents h6 a i {
+        font-size: 0.8em; }
+      #site-contents h1 a:visited, #site-contents h2 a:visited, #site-contents h3 a:visited, #site-contents h4 a:visited, #site-contents h5 a:visited, #site-contents h6 a:visited {
+        color: var(--primary-font-color); }
+      #site-contents h1 a:active, #site-contents h2 a:active, #site-contents h3 a:active, #site-contents h4 a:active, #site-contents h5 a:active, #site-contents h6 a:active {
+        color: #ff4500; }
+    #site-contents h1:hover a, #site-contents h2:hover a, #site-contents h3:hover a, #site-contents h4:hover a, #site-contents h5:hover a, #site-contents h6:hover a {
+      opacity: 1; }
+    #site-contents h1::before, #site-contents h2::before, #site-contents h3::before, #site-contents h4::before, #site-contents h5::before, #site-contents h6::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 40px;
+      right: 100%; }
+  #site-contents h1 {
+    font-size: 2.4em;
+    padding: 0 0 6px 0; }
+  #site-contents h2 {
+    font-size: 2.2em;
+    padding: 0 0 4px 0; }
+  #site-contents h3 {
+    font-size: 1.6em; }
+  #site-contents h4 {
+    font-size: 1.4em; }
+  #site-contents h5 {
+    font-size: 1.3em; }
+  #site-contents h6 {
+    font-size: 1.2em; }
+  #site-contents code {
+    font-family: Consolas, monospace, sans-serif;
+    background-color: var(--code-block-background-color);
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 4px; }
+    #site-contents code span.hljs-number {
+      color: #ff4500; }
+    #site-contents code span.hljs-comment {
+      color: #666666; }
+  #site-contents pre code {
+    padding: 4px 8px;
+    min-width: 400px;
+    max-width: 100%;
+    border-radius: 8px; }
+  #site-contents a {
+    color: #777; }
