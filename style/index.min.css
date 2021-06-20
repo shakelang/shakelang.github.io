@@ -38,5 +38,6 @@ nav div.logo {
   border: 1px solid var(--secoundary-color);
   font-size: 25px;
   padding: 8px;
-  font-family: monospace; }
+  font-family: monospace;
+  overflow-wrap: anywhere; }
 /*# sourceMappingURL=index.min.css.map */
