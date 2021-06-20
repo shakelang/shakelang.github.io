@@ -1,0 +1,11 @@
+html, body {
+  --primary-background-color: #2B2B2B;
+  --code-block-background-color: #444;
+  --primary-font-color: #fff;
+  --secoundary-font-color: #bbb;
+  --primary-color: #454545;
+  --secoundary-color: var(--primary-color); }
+
+nav div.logo {
+  background-image: url("../assets/logo/logo-white.svg"); }
+/*# sourceMappingURL=index.min.css.map */
