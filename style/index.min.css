@@ -39,5 +39,16 @@ nav div.logo {
   font-size: 25px;
   padding: 8px;
   font-family: monospace;
-  overflow-wrap: anywhere; }
+  overflow-wrap: anywhere;
+  max-height: 400px;
+  overflow-y: auto; }
+  #try-shake-region #shake-output p.console-log {
+    color: #fff; }
+  #try-shake-region #shake-output p.console-warn {
+    color: #fd0; }
+  #try-shake-region #shake-output p.console-error {
+    color: #f00; }
+  #try-shake-region #shake-output p.console-debug {
+    color: #3af;
+    display: none; }
 /*# sourceMappingURL=index.min.css.map */
