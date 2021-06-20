@@ -8,4 +8,34 @@ html, body {
 
 nav div.logo {
   background-image: url("../assets/logo/logo-white.svg"); }
+
+#try-shake-region #try-shake-editor-region {
+  position: relative; }
+  #try-shake-region #try-shake-editor-region button#try-shake-execute-button {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    background-color: #FF6242;
+    border: 0;
+    border-radius: 100%;
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1000; }
+    #try-shake-region #try-shake-editor-region button#try-shake-execute-button i {
+      color: #fff;
+      font-size: 32px; }
+    #try-shake-region #try-shake-editor-region button#try-shake-execute-button:hover {
+      right: 26px;
+      bottom: 26px;
+      width: 52px;
+      height: 52px;
+      cursor: pointer; }
+      #try-shake-region #try-shake-editor-region button#try-shake-execute-button:hover i {
+        font-size: 28px; }
+
+#try-shake-region #shake-output {
+  border: 1px solid var(--secoundary-color);
+  font-size: 25px;
+  padding: 8px; }
 /*# sourceMappingURL=index.min.css.map */
