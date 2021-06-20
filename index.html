@@ -3,8 +3,9 @@
 <head>
 
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="/style/editor.min.css">
     <link rel="stylesheet" href="/style/style.min.css">
-    <link rel="stylesheet" href="/style/materialdesignicons.min.css">
+  <link rel="stylesheet" href="/style/materialdesignicons.min.css">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
@@ -26,17 +27,22 @@
 
   <title>Shake Programming Language</title>
 
-  <script src="/scripts/shake.js" type="application/javascript"></script>
+  <!--<script src="/scripts/shake.js" type="application/javascript"></script>-->
   <script src="/scripts/index.min.js" type="application/javascript"></script>
+  <script src="/scripts/shake.min.js"></script>
 
 </head>
 <body>
   <nav>
     <a href="https://shake-lang.github.io/"><div class="logo"></div></a>
   </nav>
-  <div id="site-contents">
-    <html><head></head><body><p>Index Page</p>
-</body></html>
+  <div id="site-contents-outer-container">
+    <div id="site-contents">
+      <h1>A modern object-orientated programming language </h1>
+
+      <h2>Try Shake</h2>
+      <textarea id="try-shake">println("hello world");</textarea>
+    </div>
   </div>
 </body>
 </html>

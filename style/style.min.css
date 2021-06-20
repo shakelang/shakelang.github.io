@@ -15,7 +15,7 @@ nav {
   width: calc(100% - 8px);
   height: 50px;
   padding: 4px;
-  margin: 0;
+  margin: auto;
   border-bottom: 1px solid var(--primary-color); }
   nav div.logo {
     display: inline-block;
@@ -24,9 +24,23 @@ nav {
     background: url("../assets/logo/logo-black.svg");
     background-size: 100%; }
 
+#site-contents-outer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 #site-contents {
   padding: 12px 40px 40px 40px;
-  font-size: 16px; }
+  font-size: 16px;
+  width: 70%;
+  min-width: 800px;
+  display: inline-block; }
   #site-contents h1, #site-contents h2 {
     border-bottom: 1px solid #ddd; }
   #site-contents h1, #site-contents h2, #site-contents h3, #site-contents h4, #site-contents h5, #site-contents h6 {
@@ -84,3 +98,9 @@ nav {
     border-radius: 8px; }
   #site-contents a {
     color: #777; }
+
+@media only screen and (max-width: 880px) {
+  #site-contents {
+    min-width: 0;
+    width: 800px;
+    max-width: 100%; } }
