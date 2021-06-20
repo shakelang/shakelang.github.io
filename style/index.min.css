@@ -37,5 +37,6 @@ nav div.logo {
 #try-shake-region #shake-output {
   border: 1px solid var(--secoundary-color);
   font-size: 25px;
-  padding: 8px; }
+  padding: 8px;
+  font-family: monospace; }
 /*# sourceMappingURL=index.min.css.map */
