@@ -1,7 +1,7 @@
 private class ConsoleOutput {
 
   void writeLine ( e ) {
-    js ( 'console.log(e)' );
+    js ( "console.log(e)" );
   }
 
 }
