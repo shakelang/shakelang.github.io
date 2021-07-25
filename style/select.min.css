@@ -1,0 +1,60 @@
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 8px 0;
+  width: 400px;
+  /* style the items (options), including the selected item: */
+  /* Style items (options): */
+  /* Hide the items when the select box is closed: */ }
+  .custom-select select {
+    display: none;
+    /*hide original SELECT element: */ }
+  .custom-select .select-selected {
+    background-color: var(--primary-background-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 1000px;
+    position: relative;
+    /* Style the arrow inside the select element: */
+    /* Point the arrow upwards when the select box is open (active): */ }
+    .custom-select .select-selected:after {
+      position: absolute;
+      content: "";
+      top: 14px;
+      right: 12px;
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-color: #fff transparent transparent transparent;
+      -webkit-transition: ease 300ms all;
+      transition: ease 300ms all; }
+    .custom-select .select-selected.select-arrow-active {
+      border-radius: 18px 18px 0px 0px;
+      border-bottom: none; }
+      .custom-select .select-selected.select-arrow-active:after {
+        top: 7px;
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg); }
+  .custom-select .select-items div, .custom-select .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    cursor: pointer; }
+  .custom-select .select-items {
+    position: absolute;
+    background-color: var(--primary-background-color);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border: 1px solid var(--primary-color);
+    max-height: 50vh; }
+  .custom-select .select-hide {
+    display: none; }
+  .custom-select .select-items div:hover, .custom-select .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1); }
+/*# sourceMappingURL=select.min.css.map */
