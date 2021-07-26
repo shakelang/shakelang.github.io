@@ -18,7 +18,7 @@ nav {
   nav ul {
     display: inline-block;
     position: absolute;
-    right: 50px;
+    right: 70px;
     top: 0;
     margin: 0;
     padding: 0;
@@ -44,6 +44,20 @@ nav {
         nav ul li a:hover {
           cursor: pointer;
           border-bottom: 2px solid #fff; }
+  nav .search-button {
+    background-color: #0000;
+    color: #fff;
+    border: none;
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    right: 0;
+    top: 0; }
+    nav .search-button i {
+      font-size: 24px; }
+    nav .search-button:hover {
+      cursor: pointer;
+      color: #aaa; }
 
 html, body {
   margin: 0;
