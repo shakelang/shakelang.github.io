@@ -15,7 +15,7 @@ nav {
     width: 134.25px;
     background-image: url("../assets/logo/logo-black.svg");
     background-size: 100%; }
-  nav ul {
+  nav ul.nav-elements {
     display: inline-block;
     position: absolute;
     right: 70px;
@@ -23,25 +23,25 @@ nav {
     margin: 0;
     padding: 0;
     height: 100%; }
-    nav ul li {
+    nav ul.nav-elements li {
       display: inline-block;
       height: 100%;
       vertical-align: middle;
       text-align: center;
       line-height: calc(50px + 1em); }
-      nav ul li + li::before {
+      nav ul.nav-elements li + li::before {
         content: "  |  ";
         display: inline-block;
         height: 100%;
         white-space: pre; }
-      nav ul li a {
+      nav ul.nav-elements li a {
         cursor: pointer;
         display: inline-block;
         height: 100%;
         text-decoration: none;
         padding: 0px 4px;
         color: #fff; }
-        nav ul li a:hover {
+        nav ul.nav-elements li a:hover {
           cursor: pointer;
           border-bottom: 2px solid #fff; }
   nav div.search-bar {
@@ -50,7 +50,7 @@ nav {
     right: 70px;
     top: 18px;
     height: 30px;
-    width: 250px;
+    width: 300px;
     opacity: 0;
     pointer-events: none; }
     nav div.search-bar input.search-contents {
@@ -62,7 +62,8 @@ nav {
       width: 100%;
       height: 100%;
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      font-size: 16px; }
     nav div.search-bar input.search-contents ~ div.borders {
       position: absolute;
       left: 0;
@@ -97,6 +98,41 @@ nav {
         width: 100%;
         -webkit-transition: 0.4s;
         transition: 0.4s; }
+  nav ul.search-results {
+    display: none;
+    position: absolute;
+    right: 68px;
+    top: 48px;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    z-index: 1000;
+    border: 2px solid var(--primary-color);
+    border-top: none; }
+    nav ul.search-results li {
+      list-style: none;
+      padding: 0;
+      background-color: var(--primary-background-color); }
+      nav ul.search-results li a {
+        padding: 12px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        text-decoration: none;
+        overflow: hidden; }
+        nav ul.search-results li a p {
+          margin: 0; }
+          nav ul.search-results li a p.search-result-entry-info {
+            font-size: 10px;
+            color: #aaa; }
+      nav ul.search-results li:hover {
+        background-color: var(--secondary-background-color);
+        cursor: pointer; }
+      nav ul.search-results li + li {
+        border-top: 1px solid var(--primary-color); }
+    nav ul.search-results.shown {
+      display: inline-block; }
   nav button.search-button {
     background-color: var(--primary-background-color);
     color: #fff;
