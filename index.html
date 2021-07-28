@@ -3,11 +3,11 @@
 <head>
 
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style/editor.min.css?v=ffe">
-  <link rel="stylesheet" href="style/style.min.css?v=ffe">
-  <link rel="stylesheet" href="style/materialdesignicons.min.css?v=ffe">
-  <link rel="stylesheet" href="style/index.min.css?v=ffe">
-  <link rel="stylesheet" href="style/select.min.css?v=ffe">
+  <link rel="stylesheet" href="style/editor.min.css?v=eaabcc">
+  <link rel="stylesheet" href="style/style.min.css?v=eaabcc">
+  <link rel="stylesheet" href="style/materialdesignicons.min.css?v=eaabcc">
+  <link rel="stylesheet" href="style/index.min.css?v=eaabcc">
+  <link rel="stylesheet" href="style/select.min.css?v=eaabcc">
 
   <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
@@ -29,9 +29,9 @@
 
   <title>Shake Programming Language</title>
 
-  <script src="scripts/index.min.js?v=ffe" type="application/javascript"></script>
-  <script src="scripts/shake.min.js?v=ffe" type="application/javascript"></script>
-  <script src="scripts/search.min.js?v=ffe" type="application/javascript"></script>
+  <script src="scripts/index.min.js?v=eaabcc" type="application/javascript"></script>
+  <script src="scripts/shake.min.js?v=eaabcc" type="application/javascript"></script>
+  <script src="scripts/search.min.js?v=eaabcc" type="application/javascript"></script>
 
 </head>
 <body>
@@ -53,15 +53,17 @@
         </a>
       </li>
     </ul>
-    <div id="search-bar-container" class="search-bar">
-      <input id="search-contents" class="search-contents">
-      <div class="borders">
-        <span class="show-border border"></span>
-        <span class="focus-border border"></span>
+    <div id="search-container">
+      <div id="search-bar-container" class="search-bar">
+        <input id="search-contents" class="search-contents">
+        <div class="borders">
+          <span class="show-border border"></span>
+          <span class="focus-border border"></span>
+        </div>
       </div>
+      <ul id="search-results" class="search-results"></ul>
+      <button type="button" id="search-button" class="search-button"><i class="mdi mdi-magnify"></i></button>
     </div>
-    <ul id="search-results" class="search-results"></ul>
-    <button type="button" id="search-button" class="search-button"><i class="mdi mdi-magnify"></i></button>
   </nav>
   <div id="site-contents-outer-container">
     <div id="site-contents">
