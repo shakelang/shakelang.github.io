@@ -3,8 +3,8 @@
 <head>
 
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="/style/style.min.css?v=dadceb">
-  <link rel="stylesheet" href="/style/materialdesignicons.min.css?v=dadceb">
+  <link rel="stylesheet" href="/style/style.min.css?v=cddb">
+  <link rel="stylesheet" href="/style/materialdesignicons.min.css?v=cddb">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
@@ -26,7 +26,7 @@
 
   <title>Shake Programming Language</title>
 
-  <script src="/scripts/index.min.js?v=dadceb" type="application/javascript"></script>
+  <script src="/scripts/index.min.js?v=cddb" type="application/javascript"></script>
 
 </head>
 <body>
@@ -216,14 +216,13 @@ so bit 1 from the first number is ANDed with bit 1 from the second number, bit 2
 <p>Using <code>lshift</code> and <code>rshift</code> we can shift the bits of a number to the left or right by a certain amount.</p>
 <h3 id="2-5-brackets-priorities">2.5 Brackets &amp; Priorities<a class="headline-link" href="#2-5-brackets-priorities"><i class="mdi mdi-link-variant"></i></a></h3>
 <h4 id="2-5-1-brackets">2.5.1 Brackets<a class="headline-link" href="#2-5-1-brackets"><i class="mdi mdi-link-variant"></i></a></h4>
-<p>If you are working with bigger terms, there are priorities, e.g.
-multiplication and divisions are preferred before plus and minus.</p>
-<p>If you want to prefer plus over multiply you can use brackets around
-the addition to give it a higher priority</p>
-<p>eg.</p>
+<p>As the standard math rules still apply, Shake first performs all multiplications (and divisions) in the term and then any additions or subtractions.
+Hence, to multiply the sum of some numbers, brackets have to be placed around the numbers to be added up before they are then multiplied, eg.</p>
 <pre><code class="lang-shake"><span class="hljs-number">4</span> * <span class="hljs-number">10</span> + <span class="hljs-number">3</span>    <span class="hljs-comment">// &gt;&gt; 43</span>
 <span class="hljs-number">4</span> * <span class="hljs-comment">(10 + 3)</span>  <span class="hljs-comment">// &gt;&gt; 52</span>
 </code></pre>
+<p><em>(Hint: Brackets can be placed inside other brackets, inner brackets are always calculated first)</em></p>
+<p>As seen above, Shake "prioritizes" certain operations over others. For a complete overview of these priorities, take a look at the list below.</p>
 <h4 id="2-5-2-priorities">2.5.2 Priorities<a class="headline-link" href="#2-5-2-priorities"><i class="mdi mdi-link-variant"></i></a></h4>
 <ol>
 <li><a href="#2.5.1-Brackets">brackets</a> <code>(</code>, <code>)</code></li>
