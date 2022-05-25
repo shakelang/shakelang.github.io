@@ -32,7 +32,7 @@
     "fs-extra": "^3.0.1",
     "glob": "^7.1.7",
     "glob-promise": "^4.2.0",
-    "grunt": "^1.4.1",
+    "grunt": "^1.5.3",
     "grunt-browser-sync": "^2.2.0",
     "grunt-compile-handlebars": "^2.0.2",
     "grunt-contrib-clean": "^2.0.0",
